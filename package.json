@@ -24,5 +24,13 @@
     "async",
     "compile",
     "helper"
-  ]
+  ],
+  "dependencies": {
+    "async-helpers": "^0.3.14",
+    "isobject": "^3.0.0"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.6",
+    "remarkable": "^1.7.1"
+  }
 }
