@@ -1,0 +1,28 @@
+{
+  "name": "helper-compile-async",
+  "description": "Convenience method to compile async helpers and add common functionality to use with async-helpers.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/helpers/helper-compile-async",
+  "author": "Brian Woodward (https://github.com/doowb)",
+  "repository": "helpers/helper-compile-async",
+  "bugs": {
+    "url": "https://github.com/helpers/helper-compile-async/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "async",
+    "compile",
+    "helper"
+  ]
+}
