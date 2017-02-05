@@ -58,7 +58,9 @@ asyncHelpers.set('md2', compile(md2));
 
 var helpers = asyncHelpers.get({wrap: true});
 
+console.log('-- WRAPPED HELPERS --');
 console.log(helpers);
+console.log();
 Handlebars.registerHelper(helpers);
 
 var tmpl = `
@@ -82,11 +84,18 @@ var tmpl = `
 {{/md2}}
 `;
 
+console.log('-- TEMPLATE --');
+console.log(tmpl);
+console.log();
 var fn = Handlebars.compile(tmpl);
 var str = fn({list: ['a', 'b', 'c', 'd']});
+console.log('-- RENDERED STRING (contains async ids) --');
 console.log(str);
+console.log();
 
 asyncHelpers.resolveIds(str, function(err, str) {
   if (err) console.error(err);
+  console.log('-- RESOLVED STRING (no async ids) --');
   console.log(str);
+  console.log();
 });
