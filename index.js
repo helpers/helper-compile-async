@@ -5,6 +5,10 @@ var AsyncHelpers = require('async-helpers');
 var asyncHelpers;
 
 module.exports = function compile(helper) {
+  if (typeof helper !== 'function') {
+    throw new TypeError('expected a function');
+  }
+
   if (!asyncHelpers) {
     asyncHelpers = new AsyncHelpers();
   }
