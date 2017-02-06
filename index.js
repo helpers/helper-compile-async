@@ -4,6 +4,22 @@ var isObject = require('isobject');
 var AsyncHelpers = require('async-helpers');
 var asyncHelpers;
 
+/**
+ * Compile a helper function to add convenience methods for
+ * working with [async-helpers][].
+ *
+ * ```js
+ * // ensures that asyncHelpers.resolveIds is called on the
+ * // rendered content from `options.fn` before returning
+ * var helper = compile(function(options, cb) {
+ *   return options.fn(this, cb);
+ * });
+ * ```
+ * @param  {Function} `helper` Helper function to be called with a modified `options.fn` and `options.inverse` function if available.
+ * @return {Function} Compiled helper function suitable to be registered with a template engine.
+ * @api public
+ */
+
 module.exports = function compile(helper) {
   if (typeof helper !== 'function') {
     throw new TypeError('expected a function');
