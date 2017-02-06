@@ -37,7 +37,7 @@
   },
   "verb": {
     "toc": false,
-    "layout": "helper",
+    "layout": "default",
     "tasks": [
       "readme"
     ],
@@ -46,6 +46,15 @@
     ],
     "lint": {
       "reflinks": true
-    }
+    },
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "async-helpers",
+      "generate",
+      "generate-helper",
+      "helpers"
+    ]
   }
 }
