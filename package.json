@@ -30,8 +30,22 @@
     "isobject": "^3.0.0"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.11",
     "handlebars": "^4.0.6",
     "mocha": "^3.2.0",
     "remarkable": "^1.7.1"
+  },
+  "verb": {
+    "toc": false,
+    "layout": "helper",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
