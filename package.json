@@ -10,8 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "LICENSE"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -20,11 +19,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [
-    "async",
-    "compile",
-    "helper"
-  ],
   "dependencies": {
     "async-helpers": "^0.3.14",
     "isobject": "^3.0.0"
@@ -35,6 +29,18 @@
     "mocha": "^3.2.0",
     "remarkable": "^1.7.1"
   },
+  "keywords": [
+    "assemble",
+    "async",
+    "async-helpers",
+    "compile",
+    "generate",
+    "helper",
+    "helpers",
+    "templates",
+    "update",
+    "verb"
+  ],
   "verb": {
     "toc": false,
     "layout": "default",
