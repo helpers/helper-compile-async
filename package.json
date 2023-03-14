@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "async-helpers": "^0.3.14",
-    "isobject": "^3.0.0"
+    "isobject": "^4.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.11",
